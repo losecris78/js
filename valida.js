@@ -8,7 +8,7 @@ form.addEventListener("submit",function (x){
 let first = document.getElementById("a");
 let second = document.getElementById("b");
 let mensagem = ""
-document.getElementById("resposta").innerHTML = (mensagem);
+
 const button = document.getElementById("btn_valida");
 
 button.addEventListener("submit",valida(first,second));
@@ -25,7 +25,9 @@ button.addEventListener("submit",valida(first,second));
         }else{
             mensagem ="O primeiro número é o menor"; 
             return mensagem;}
-            
         }
-        document.getElementById("resposta").innerHTML = `${mensagem}`;
-   
+document.getElementById("resposta").innerHTML = `${mensagem}`;
+first.value = ' ';
+second.value= ' ';
+        
+        
