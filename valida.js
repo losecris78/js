@@ -26,7 +26,6 @@ button.addEventListener("submit",valida(first,second));
             mensagem ="O primeiro número é o menor"; 
             return mensagem;}
             
-            
         }
-        document.getElementById("resposta").innerHTML = (mensagem);
+        document.getElementById("resposta").innerHTML = `${mensagem}`;
    
